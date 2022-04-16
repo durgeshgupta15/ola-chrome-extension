@@ -47,35 +47,56 @@ const Popup = () => {
   return (
     <div className="App">
       <div className='card-wrapper'>
-        <div className='card'>
-          <span>Total Rides</span>
-          <span>{totalRides.length}</span>
-        </div>
-        <div className='card'>
-          <span>Completed Rides</span>
-          <span>{completedRides.length}</span>
-        </div>
-        <div className='card'>
-          <span>Uncompleted Rides</span>
-          <span>{uncompletedRides.length}</span>
-        </div>
-        <div className='card'>
-          <span>Total Money Spent</span>
-          <span>{totalSpentAmount}</span>
-        </div>
-        <div className='card'>
-          <span>Total Bike Ride Taken</span>
-          <span>{totalBikeTaken.length}</span>
-        </div>
-        <div className='card'>
-          <span>Total Mini Ride Taken</span>
-          <span>{totalMiniTaken.length}</span>
-        </div>
-        <div className='card'>
-          <span>Total Sedan Ride Taken</span>
-          <span>{totalSedanTaken.length}</span>
-        </div>
+        <div className='card-container'>
+          <div className="card">
+            <h4><b>Total Rides</b></h4>
+            <div className="container">
+              <p>{totalRides.length}</p>
+            </div>
+          </div>
 
+          <div className="card">
+            <h4><b>Completed Rides</b></h4>
+            <div className="container">
+              <p>{completedRides.length}</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <h4><b>Uncompleted Rides</b></h4>
+            <div className="container">
+              <p>{uncompletedRides.length}</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <h4><b>Total Money Spent</b></h4>
+            <div className="container">
+              <p>₹ {totalSpentAmount}</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <h4><b>Total Bike Ride Taken</b></h4>
+            <div className="container">
+              <p>{totalBikeTaken.length}</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <h4><b>Total Mini Ride Taken</b></h4>
+            <div className="container">
+              <p>{totalMiniTaken.length}</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <h4><b>Total Sedan Ride Taken</b></h4>
+            <div className="container">
+              <p>{totalSedanTaken.length}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
